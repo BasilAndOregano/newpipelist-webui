@@ -12,7 +12,12 @@
 </head>
 <body>
     <py-env>
-    - pip
+    - autoclose_loader: true
+    - runtimes:
+      -
+        src: "/pyodide.js"
+        name: pyodide-0.21
+        lang: python
     </py-env>
     <py-script src="./main.py"></py-script>
     <py-repl></py-repl>
